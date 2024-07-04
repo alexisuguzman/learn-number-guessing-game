@@ -217,3 +217,4 @@ git merge feat/update-and-insert-into-database
 git status
 git add .
 git commit -m "refactor: Changed final message location"
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
