@@ -1,0 +1,219 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir number_guessing_game
+touch number_guess.sh
+chmod +x number_guess.sh
+cd .
+cd...
+cd ...
+cd /.
+cd ./.
+cd ..
+cd .
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cd number_guessing_game
+git init
+gti status
+git status
+gti add -
+git add .
+git commit -m "Initial commit"
+git checkout -b feat/ask-username-and-generate-random-number
+./number_guess.sh
+git add .
+git status
+git commit -m "feat: ask username and generate random number"
+git checkoout main
+git checkout main
+git branch
+git branch -n main
+git branch main
+git checkout main
+git merge feat/ask-username-and-generate-random-number
+main rebase main
+git rebase main
+git checkout feat/ask-username-and-generate-random-number
+git rebase main
+git log --oneline
+git checkout main
+git branch -d feat/ask-username-and-generate-random-number
+git checkout -b feat/query-username-in-database
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+git status
+git add -
+git add .
+git diff main
+git commit -m "feat: added username functionality"
+git checkout main
+git status
+git diff
+git stash
+git checkout main
+git merge feat/query-username-in-database
+git log
+git checkout -b feat/add-guessing-functionality
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+help [[
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+git status
+git add .
+git commit -m "feat: added guessing functionality"
+git checkout main
+git merge feat/add-guessing-functionality
+git log
+git checkout -b feat/update-and-insert-into-database
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+git add .
+git status
+git commit -m "feat: completed project"
+git status
+git checkout main
+git merge feat/update-and-insert-into-database
+./number_guess.sh
+git status
+git add .
+git commit -m "refactor: Changed final message location"
